@@ -1,0 +1,5 @@
+{
+    "workbench.editor.languageDetection": true,
+    "css.lint.unknownAtRules": "ignore"
+
+}
