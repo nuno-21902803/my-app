@@ -1,13 +1,11 @@
 import React from 'react';
 
-const EditTask = () => {
-    return (
-        <div>
-            <button className="btn btn-primary w-full">
-                    Edit Task
-            </button>     
-        </div>
-    );
-};
+type ButtonProps = React.ComponentPropsWithoutRef<"button">;
 
-export default EditTask;
+export default function EditTask(props: ButtonProps) {
+    return (
+        <button className="btn btn-primary w-full">
+                        Edit Task
+        </button>
+        );  
+}

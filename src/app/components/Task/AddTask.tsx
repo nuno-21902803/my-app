@@ -1,13 +1,14 @@
 import React from 'react';
+import TaskButton from './TaskButton';
+import Input from './Input';
 
-const AddTask = () => {
+type ButtonProps = React.ComponentPropsWithoutRef<"button">;
+
+export default function AddTask(props: ButtonProps) {
     return (
-        <div>
-            <button className="btn btn-primary w-full">
-                    Add new Task
-            </button>
+        <div className ="newTask">
+            <TaskButton type={'submit'} iconType='add'/>
+            <Input color='black' type='text' placeholder='Add new Task...'></Input>
         </div>
-    );
-};
-
-export default AddTask;
+        );  
+}

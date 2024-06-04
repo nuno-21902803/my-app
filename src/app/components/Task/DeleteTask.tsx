@@ -1,13 +1,12 @@
 import React from 'react';
 
-const DeleteTask = () => {
-    return (
-        <div>
-            <button className="btn btn-primary w-full">
-                    Delete Task
-            </button>
-        </div>
-    );
-};
+//Doesn't need the Ref when calling the component
+type ButtonProps = React.ComponentPropsWithoutRef<"button">;
 
-export default DeleteTask;
+export default function DeleteTask(props: ButtonProps) {
+    return (
+        <button className="btn btn-primary w-full">
+                        Delete Task
+        </button>
+        );  
+}
